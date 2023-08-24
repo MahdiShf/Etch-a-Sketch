@@ -10,21 +10,28 @@
     <title>Etch a sketch</title>
   </head>
   <body>
-    <div class="container">
-      <div class="title"><h1>SketchPad</h1></div>
-      <div class="content">
-        <div class="board"></div>
-        <div class="buttons">
-          <button>BLACK</button>
-          <button>WHITE</button>
-          <button>RANDOM</button>
-          <button>RESET</button>
-        </div>
-        <div>
-          <input type="text" placeholder="BOARD SIZE" value="16" />
-          <button>SET SIZE</button>
+    <main>
+      <div class="container">
+        <header class="title"><h1>SketchPad</h1></header>
+        <h2 class="mode">Color Mode: On</h2>
+        <section class="content">
+          <div class="board"></div>
+          <div class="buttons">
+            <button class="color-but">BLACK</button>
+            <button class="color-but">BLUE</button>
+            <button class="color-but">RED</button>
+            <button class="color-but">GREEN</button>
+            <button class="eraser">ERASER</button>
+            <button class="random">RANDOM</button>
+            <button class="reset">RESET</button>
+          </div>
+          <div>
+            <input type="text" placeholder="BOARD SIZE" value="16" />
+            <button>SET SIZE</button>
+            <!-- <p class="error">Input must be between 2 & 100</p> -->
+          </div>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
