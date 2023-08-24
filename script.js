@@ -5,8 +5,10 @@ clickArea.addEventListener("click", function () {
   sketch = !sketch;
   if (sketch) {
     document.querySelector(".mode").textContent = "Color Mode: On";
+    document.querySelector(".mode").style.color = "#04acc9";
   } else {
     document.querySelector(".mode").textContent = "Color Mode: Off";
+    document.querySelector(".mode").style.color = "#e30101";
   }
 });
 function settleBoard(size) {
