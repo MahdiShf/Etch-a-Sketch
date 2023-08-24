@@ -1,8 +1,114 @@
+.title {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #fd03f3;
+  font-style: oblique;
+}
+.mode {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: #04acc9;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #d7dd6463;
+}
+
 .board {
-  width: 500px;
-  height: 500px;
+  width: 40vw;
+  height: 65vh;
   display: grid;
+  background-color: white;
+  box-shadow: -1px 0px 13px 4px rgb(170, 170, 170);
+  min-width: 545px;
+}
+.board:hover {
+  cursor: pointer;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+  min-height: 300px;
+}
+.buttons {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+button {
+  margin: 0 3px;
+  cursor: pointer;
+  padding: 10px 55px;
+  border: 1px solid purple;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 5px rgb(170, 170, 170);
+  border: 2px solid purple;
+}
+button.black {
+  color: white;
+  background-color: black;
+}
+button.blue {
+  color: white;
+  background-color: blue;
+}
+button.red {
+  color: white;
+  background-color: red;
+}
+button.green {
+  color: white;
+  background-color: green;
+}
+button.random {
+  color: white;
+  background: linear-gradient(0.35turn, #9202ff, #f11313, #03fdbf);
+}
+button.eraser {
+  color: white;
+  background-color: gray;
+}
+button.reset {
+  color: black;
+  background-color: white;
+}
+.boardsize {
+  margin-right: 8px;
+  width: 50px;
+  border-radius: 5px;
+}
+.boardsize:focus {
+  outline: none;
+  box-shadow: 1px 1px 5px rgb(170, 170, 170);
+  border: 2px solid green;
+}
+.size-button {
+  color: #00bcd4;
+  background-color: #ecb5ff;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: #ff0000;
 }
 .error {
+  margin-top: 10px;
   display: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  color: #ff0f01;
+  font-size: 15px;
 }
