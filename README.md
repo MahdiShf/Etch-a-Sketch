@@ -10,7 +10,7 @@ Project: <a href="https://www.theodinproject.com/lessons/foundations-etch-a-sket
 
 ### Screenshot :
 
-<img alt="etch-a-sketch" src="/images/Screenshot.jpg">
+<img alt="etch-a-sketch" src="/images/screenshot.jpg">
 
 ## Languages & Tools
 
