@@ -12,25 +12,48 @@
   <body>
     <main>
       <div class="container">
+        <!-- Heading for the title of the sketchpad: -->
         <header><h1 class="title">SketchPad</h1></header>
+        <!-- Heading indicating the color mode status: -->
         <h2 class="mode">Color Mode: On</h2>
         <section class="content">
+          <!-- Sketch board container: -->
           <div class="board"></div>
+          <!-- Buttons container -->
           <div class="buttons">
-            <button class="color-but black">BLACK</button>
-            <button class="color-but blue">BLUE</button>
-            <button class="color-but red">RED</button>
-            <button class="color-but green">GREEN</button>
-           <button class="random">RANDOM</button> 
-           <button class="eraser">ERASER</button>
-            <button class="reset">RESET</button>
+            <button class="color-but black" aria-label="select black color">
+              BLACK
+            </button>
+            <button class="color-but blue" aria-label="select blue color">
+              BLUE
+            </button>
+            <button class="color-but red" aria-label="select red color">
+              RED
+            </button>
+            <button class="color-but green" aria-label="select green color">
+              GREEN
+            </button>
+            <button class="random" aria-label="select random color">
+              RANDOM
+            </button>
+            <button class="eraser" aria-label="select eraser">ERASER</button>
+            <button class="reset" aria-label="reset sketch">RESET</button>
           </div>
           <div>
-            <input class="boardsize" type="text" placeholder="Size" value="16" />
+            <!-- Input for changing the size of the board: -->
+            <input
+              class="boardsize"
+              type="text"
+              placeholder="Size"
+              value="16"
+            />
             <button class="size-button">SET SIZE</button>
-            <p class="error">Input must be between 2 & 100</p>
+            <!-- Error for wrong board size input -->
+            <p class="error" id="boardsize-error">
+              Input must be between 2 & 100
+            </p>
           </div>
-        </div>
+        </section>
       </div>
     </main>
   </body>

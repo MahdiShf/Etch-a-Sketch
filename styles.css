@@ -112,8 +112,8 @@ button.reset {
   color: #ff0f01;
   font-size: 15px;
 }
-
-@media only screen and (max-width: 480px) {
+/* Media query for screens with a maximum width of 768px (moblie devices,tablets) */
+@media only screen and (max-width: 768px) {
   .board {
     max-height: 53vh;
     min-width: 86vw;
