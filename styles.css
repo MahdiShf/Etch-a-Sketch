@@ -112,3 +112,28 @@ button.reset {
   color: #ff0f01;
   font-size: 15px;
 }
+
+@media only screen and (max-width: 480px) {
+  .board {
+    max-height: 53vh;
+    min-width: 86vw;
+  }
+  button {
+    width: 40vw;
+    margin: 0;
+    padding: 10px 28px;
+  }
+  .buttons {
+    display: flex;
+    gap: 1vh;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .title {
+    height: 1vh;
+    margin: 0 0 4vh 0;
+  }
+  .mode {
+    margin: 1vh;
+  }
+}
